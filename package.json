@@ -1,0 +1,27 @@
+{
+  "name": "agent-context",
+  "version": "0.1.0",
+  "description": "Repo-first engineering context retrieval for coding agents and PR review.",
+  "license": "Apache-2.0",
+  "type": "commonjs",
+  "bin": {
+    "agent-context": "bin/agent-context.js",
+    "agent-context-mcp": "bin/agent-context-mcp.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test",
+    "check": "npm test"
+  },
+  "keywords": [
+    "agents",
+    "codex",
+    "claude",
+    "github-actions",
+    "mcp",
+    "context",
+    "code-review"
+  ]
+}

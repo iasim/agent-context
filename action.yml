@@ -1,0 +1,28 @@
+name: Agent Context
+description: Retrieve relevant engineering context for pull requests.
+author: Agent Context contributors
+
+inputs:
+  context-dir:
+    description: Directory containing Agent Context Markdown files.
+    required: false
+    default: .agent-context/context
+  diff:
+    description: Git diff range to inspect, for example main...HEAD.
+    required: false
+  task:
+    description: Extra task text to use during relevance scoring.
+    required: false
+    default: review this pull request
+  limit:
+    description: Maximum number of context entries to show.
+    required: false
+    default: "8"
+  comment:
+    description: Whether to create or update a pull request comment.
+    required: false
+    default: "true"
+
+runs:
+  using: node20
+  main: bin/agent-context-action.js
