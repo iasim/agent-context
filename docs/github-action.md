@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: your-org/agent-context@v1
+      - uses: iasim/agent-context@v0.1.1
         with:
           context-dir: .agent-context/context
           comment: true
@@ -33,7 +33,7 @@ jobs:
         with:
           repository: acme/engineering-context
           path: engineering-context
-      - uses: your-org/agent-context@v1
+      - uses: iasim/agent-context@v0.1.1
         with:
           context-dir: engineering-context/context
 ```

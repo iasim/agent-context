@@ -21,10 +21,12 @@ The first version is intentionally small:
 ## Quick Start
 
 ```bash
-npx agent-context init
-npx agent-context index
-npx agent-context relevant --paths "packages/billing/invoices.ts" --task "add usage-based billing"
+npx github:iasim/agent-context init
+npx github:iasim/agent-context index
+npx github:iasim/agent-context relevant --paths "packages/billing/invoices.ts" --task "add usage-based billing"
 ```
+
+After installing from source or a package manager, use the shorter `agent-context` command shown below.
 
 For a branch diff:
 
@@ -88,7 +90,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: your-org/agent-context@v1
+      - uses: iasim/agent-context@v0.1.1
         with:
           context-dir: .agent-context/context
           comment: true
@@ -101,7 +103,7 @@ For a separate context repo, check it out before this action:
         with:
           repository: acme/engineering-context
           path: engineering-context
-      - uses: your-org/agent-context@v1
+      - uses: iasim/agent-context@v0.1.1
         with:
           context-dir: engineering-context/context
 ```

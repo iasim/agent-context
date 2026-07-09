@@ -1,6 +1,6 @@
 {
-  "name": "agent-context",
-  "version": "0.1.0",
+  "name": "@iasim/agent-context",
+  "version": "0.1.1",
   "description": "Repo-first engineering context retrieval for coding agents and PR review.",
   "license": "Apache-2.0",
   "type": "commonjs",
